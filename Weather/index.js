@@ -41,10 +41,11 @@ async function checkWeather(city) {
 
     document.querySelector(".Weather").style.display = "block"
 
-
     
 }
 
 
 inputBtn.addEventListener("click", ()=> {checkWeather(SearchBtn.value)})
+
+
 
