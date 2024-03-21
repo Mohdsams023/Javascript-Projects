@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
+    <title>Todo App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Add Todo</h1>
+        <div class="todo-container">
+            <input type="text" id="todo">
+            <input type="date"  id="dates">
+            <button onclick="addTodo()">Add Todo</button>
+        </div>
+        <table>
+            <h1>Todos List</h1>
+            <thead>
+                <tr class="heading">
+                    <th>Todo</th>
+                    <th>Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="table">     
+            </tbody>
+        </table>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+
+h1 {
+    margin: 30px;
+}
+
+input {
+    height: 30px;
+    width: 150px;
+    margin: 20px;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(8, 150, 20);
+    color: white;
+    border: 0px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+
+.delete {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+    font-weight: 600;
+}
+
+.unchecked {
+    background-color: rgb(26, 69, 242);
+    font-weight: 600;
+    color: white;
+    padding: 10px;
+}
+
+.checked {
+    background-color: rgb(8, 150, 20);
+    font-weight: 600;
+    color: white;
+    padding: 10px;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+thead  th, tbody td th{
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+@media screen and (max-width: 400px) {
+    .todo-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    input {
+        height: 30px;
+        width: 150px;
+        margin: 5px;
+    }
+    button {
+       margin: 20px;
+    }
+
+  
+}
